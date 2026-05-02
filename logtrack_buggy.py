@@ -1,7 +1,7 @@
 #logtrack_buggy.py
 import numpy as np
 
-np.random.seed(11)
+np.random.seed(42)
 
 CARRILES = 20
 K = 10
@@ -40,5 +40,5 @@ def filtrado_particulas(observaciones):
     return particulas
 
 # Secuencia de sensores simulando movimiento real del vehiculo
-observaciones = [5, 6, 7, 7, 8, 8, 3, 4, 5]
+observaciones = [5, 6, 7, 8, 6, 5]
 filtrado_particulas(observaciones)
